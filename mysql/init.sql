@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS boxopay_db;
+USE boxopay_db;
+
+CREATE TABLE IF NOT EXISTS payments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  stripe_payment_intent_id VARCHAR(255) NOT NULL UNIQUE,
+  amount INT NOT NULL,
+  currency VARCHAR(3) NOT NULL DEFAULT 'usd',
+  status VARCHAR(50) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

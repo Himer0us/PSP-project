@@ -15,8 +15,8 @@ A Payment Service Provider which uses Stripe architecture to accept, refuse, can
 **Installing**
 
 1. Clone the repository:
-git clone https://github.com/Himer0us/boxopay-intern-project.git
-cd boxopay-intern-project
+git clone https://github.com/Himer0us/PSP-project.git
+cd PSP-project
 
 2. Rename .env.example file into .env and change password and keys to your own keys.
 Stripe keys can be taken from Stripe dashboard page when creating the sandbox

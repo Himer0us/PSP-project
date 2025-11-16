@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Demo</title>
+    <title>Checkout - BoxoPay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .product {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .price {
+            font-size: 24px;
+            color: #28a745;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .back {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="startCheckout()">Pay with Stripe </button>
+    <a href="index.html" class="back">← Back to Home</a>
+    <h1>Checkout</h1>
+    
+    <div class="product">
+        <h3>Premium T-Shirt</h3>
+        <div class="price">$20.00</div>
+        <p>High-quality cotton t-shirt</p>
+    </div>
+    
+    <button class="btn" onclick="startCheckout()">Pay with Stripe</button>
+    <p style="color: #666; font-size: 14px;">Secure payment processing</p>
+    
     <script src="checkout.js"></script>
 </body>
 </html>
